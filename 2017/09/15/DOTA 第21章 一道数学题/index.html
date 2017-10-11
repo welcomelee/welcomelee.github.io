@@ -1,0 +1,723 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #1E92FB; /*进度条颜色*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #1E92FB;    /*上边框颜色*/
+        border-left-color: #1E92FB;    /*左边框颜色*/
+    }
+</style>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Fucheng_style," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="打完退出游戏，立刻看到一群消息弹了出来，冰川来的消息：“大神，收我做徒弟吧？教教我屠夫怎么玩得呗？我悟性很好的。”慕容看到后，眉头皱了皱，这人还真是脸皮厚啊！并没有理会他，而是直接忽略了该消息，但是他却万万没有想到的是正是由于他这次屠夫的精彩表演在冰川的心里留下了不可磨灭的印象，那种震撼刺激着他不断在这次战斗的replay中不断探索，不断模仿，终于以他自傲的屠夫技术震撼vs一房，也获得了屠夫冰川的">
+<meta name="keywords" content="Fucheng_style">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DOTA 第21章 一道数学题">
+<meta property="og:url" content="http://yoursite.com/2017/09/15/DOTA 第21章 一道数学题/index.html">
+<meta property="og:site_name" content="学习使人进步">
+<meta property="og:description" content="打完退出游戏，立刻看到一群消息弹了出来，冰川来的消息：“大神，收我做徒弟吧？教教我屠夫怎么玩得呗？我悟性很好的。”慕容看到后，眉头皱了皱，这人还真是脸皮厚啊！并没有理会他，而是直接忽略了该消息，但是他却万万没有想到的是正是由于他这次屠夫的精彩表演在冰川的心里留下了不可磨灭的印象，那种震撼刺激着他不断在这次战斗的replay中不断探索，不断模仿，终于以他自傲的屠夫技术震撼vs一房，也获得了屠夫冰川的">
+<meta property="og:updated_time" content="2017-09-15T06:54:00.612Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="DOTA 第21章 一道数学题">
+<meta name="twitter:description" content="打完退出游戏，立刻看到一群消息弹了出来，冰川来的消息：“大神，收我做徒弟吧？教教我屠夫怎么玩得呗？我悟性很好的。”慕容看到后，眉头皱了皱，这人还真是脸皮厚啊！并没有理会他，而是直接忽略了该消息，但是他却万万没有想到的是正是由于他这次屠夫的精彩表演在冰川的心里留下了不可磨灭的印象，那种震撼刺激着他不断在这次战斗的replay中不断探索，不断模仿，终于以他自傲的屠夫技术震撼vs一房，也获得了屠夫冰川的">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":true},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/09/15/DOTA 第21章 一道数学题/"/>
+
+
+
+
+
+  <title>DOTA 第21章 一道数学题 | 学习使人进步</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">学习使人进步</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">自动更新小说</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/15/DOTA 第21章 一道数学题/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="welcomelee">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="学习使人进步">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">DOTA 第21章 一道数学题</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-15T14:54:00+08:00">
+                2017-09-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/DOTA/" itemprop="url" rel="index">
+                    <span itemprop="name">DOTA</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>打完退出游戏，立刻看到一群消息弹了出来，冰川来的消息：“大神，收我做徒弟吧？教教我屠夫怎么玩得呗？我悟性很好的。”<br>慕容看到后，眉头皱了皱，这人还真是脸皮厚啊！并没有理会他，而是直接忽略了该消息，但是他却万万没有想到的是正是由于他这次屠夫的精彩表演在冰川的心里留下了不可磨灭的印象，那种震撼刺激着他不断在这次战斗的replay中不断探索，不断模仿，终于以他自傲的屠夫技术震撼vs一房，也获得了屠夫冰川的美名。<br>经过一盘的厮杀，慕容的心里稍微舒服了点，伸了伸胳膊，扭了扭脖子打算去睡觉，毕竟明天还要去上课呢！万一精神状态不好，被张晓颖看到，一想到她看自己的眼神，浑身打了个激灵。<br>刚要退出vs，忽然看到一个好友邀请，这是哪个又要拜师的？<br>点开一看原来是一直没有太多话，但是被自己杀了好多次的小妖精。<br>“你是哪个战队的？”对方并没有跟自己客气，而是劈头盖脸的就来这么一句，显然对于自己的把他杀好几次耿耿于怀。<br>原来是个闷骚男啊！游戏里没什么反应，打完游戏了又找了过来。<br>“我没有战队！”慕容老实的回?一?本?读?小说　答。<br>“不可能吧，你技术这么好，简直有些逆天了，以前居然没有看到过，肯定是哪个职业玩家的小号吧？”小妖精继续追问道。<br>“真不是职业选手，难道非得职业选手才能这么厉害吗？高手在民间！孩子！”<br>“你说谁是孩子呢？你才是孩子！”<br>“不跟你瞎扯了，我要睡觉了！”<br>“这才几点啊，就要睡觉，来一起再打一盘吧？让我鉴定下到底是谁的风格？”<br>瞥了眼挂在墙上的时钟，已经十二点了，不能再打了。<br>“下次再说吧！”<br>“……”<br>小妖精又想再说什么的时候，慕容已经退出了vs，实在是不敢得罪自己的老师啊，毕竟自己才来一天而已。<br>睡了一个很美很香的觉，做了一个很惬意的美梦。<br>早上一睁开眼，八点半了，我擦！<br>这种感觉就像你起床发现自己的一血被一个又老又肥的女人拿走了一样。<br>惊恐！<br>没错，此刻的慕容只有这一词可以形容他。<br>妈的，昨晚哪个梦太美了，害得老子居然起来这么晚了。<br>刷牙洗脸，三分钟搞定。<br>火速冲上马路，直接拦了辆出租车直奔港城二中。<br>“现在的孩子这么舍得花钱啊，上个学都打车？”四十多岁的出租车司机也不忘记调侃几句。<br>“迟到了嘛！”<br>“唉，肯定是玩游戏玩得吧！我儿子跟你一样，天天拈着什么dota的游戏，怎么打都没用。”出租车司机非常无奈的道，看来他也是话唠啊。<br>“去去去，谁是你儿子阿，占老子便宜。”<br>不过慕容没在嘴上表现出来，而是恶毒的暗自诅咒，让你儿子跟我对线吧，虐死丫的，然后就知道好好学习了。<br>就在慕容满头大汗，冲到教室门口的时候，全班立马投来了非常非常同情的表情。<br>没错，是同情！<br>不是鄙视，也不是看热闹！<br>自从昨天晚上慕容血虐了高一二班的精英之后，他的英勇事迹在今天早上的时候已经传遍了高一级部各个班级，把他描述成神一样的火枪。<br>扎实的补刀、飘逸的走位、敏锐的反应等等，简直就是传说哥再世。<br>但是，虽然在同学们心中赢得了位置，在班主任张晓颖这里却不太好使。<br>“入学第二天你就迟到，这是对我宣战的意思吗？”张晓颖越发的看着这个新来的小子不顺眼了。<br>“这个我哪敢啊！老师我在昨天晚上过马路看到一个老太太被车撞了，送她到医院去了。结果忙到现在才迟到的。”<br>“是啊，老师，本来昨天我打算跟慕容一起去的，我恰好遇到，结果慕容为了不耽误我的学业，自己一个人去的。”坐在那里替慕容着急的孙磊也不忘记帮他圆这个谎话。<br>“是吗？”满脸狐疑之色的张晓颖踩着高跟鞋，在教室里走路发出清脆的响声，让人感觉仿佛是人间仙乐。<br>“是啊！”慕容心虚道，但也没有办法了，只能把这个谎先圆过去了。<br>“我课后，去打听一下，看你是不是在撒谎。”<br>“不过呢，总归是迟到了，为了体现公平性，我决定出道题目给你，如果你答案让我满意的话呢，就可以去坐着了，但是想不出来答案呢，那抱歉哈，只能先站在这里，直到你回答出来为止。”张晓颖溜达到慕容的面前忽然莞尔一笑，让慕容心中一荡，但忽然来这么一出，让他感觉很郁闷。<br>张晓颖何许人也？<br>昨晚早有八卦的同学，将她的光辉事迹给慕容讲得一清二楚了。<br>张晓颖是港城二中鼎鼎大名的数学老师，别看是个女人，但非常有数学天赋。早在上高中期间，就获得了数学奥林匹克的冠军，直接被保送清华大学，十六岁的年纪被保送清华，当年可是轰动全城，被誉过数学界小仙女。<br>十九岁的年纪就已经获得了清华大学的数学硕士学位，本来要继续读博士的，但不知道为什么，她突然就从清华毕业了，没有继续攻读博士学位，而是回到了港城任教，虽然有大材小用的嫌疑，人们不觉有些惋惜。但是张晓颖也是个倔强的人，这是她在港城二中任教的第三个月。<br>面对这样的一个才女，那出的肯定是数学题目了，对于这个丝毫没有任何兴趣的慕容心里是一点底都没有啊。<br>“听好了，种20棵树，4棵一行，最多种多少行？”<br>“完了？”慕容以为自己没听清楚，又问了一遍。<br>“完了，看你的答案了！”张晓颖那精致的脸庞难得给慕容露出一个迷人的微笑，但是那笑容却让慕容感觉有点毛骨悚然。<br>“那肯定不是20除以4这么简单啊！”慕容暗暗思索着。<br>“这么题目好简单啊，这算哪门子的难题啊？”班级里有同学开始小声地议论起来。<br>“白痴，你以为是20除以4？”<br>“难道不是吗？”<br>这样的问答此起彼伏，虽然这港城二中里的学生绝大多数都是学霸，但并不是每个人都对数学是如此精通的。<br>慕容把求助的目光望向了自己的同桌李阳，这小子在数学上就是一个天才，不但上次期中考试数学拿了满分，而且他还是学校奥林匹克小组的成员，这小子肯定没问题。<br>结果不知道李阳是故意没看到啊，还是不会，装着打瞌睡的样子，趴在那里一动不动，让慕容十分的郁闷。<br>奈何张大老师此刻正站在那里，他又不敢妄动，只能假装思考状。<br>“怎么样啊？”张老师笑咪咪的望着慕容，她有十足的把握，这下可以教训下这个小子了。这道题目可是当初的世界级难题，怎么会让这么一个看起来不学无术的家伙做出答案呢。<br>就在张晓颖笑眯眯望着慕容的时候，慕容用他那广角360度的目光瞥到了李阳突然兴奋的用手比划了一个五角星，又用手比划了一个3字。<br>慕容灵机一动，凭他的脑子稍微思考了片刻，便已了然，于是他假装试探的道：“老师，是不是20行呢？”<br>正笑着的张晓颖忽然表情凝固了，十分充满致意道；“是不是蒙的?说说分析过程！”<br>听她这么说，慕容心里顿时松了口气，李阳这小子还真有两把刷子，于是打起精神，故作轻松道：“3个五角星套起来嘛！这还不简单。”<br>说完，慕容得意的站在那里看着张晓颖德反应。<br>“小子挺聪明啊！”冲着慕容说完，张晓颖又转头走到教室中间对全班同学说：“同学们，这道题目可是世界级难题，16世纪的时候只排出了16行，19世纪的时候18行，直到20世纪末才排出20行，当然数学的世界是博大精深，也是充满乐趣的，这道题目的终极答案就需要同学们的努力啦，说不定你们当中就有人能够排出20行以上，有信心吗？”<br>张晓颖居然趁着这个机会，在课堂上面就势做起来演讲，看到同学们马上变得朝气勃勃的样子，还不得不佩服她真具有老师的天赋啊。<br>“老师，我能去坐了么？”慕容小心翼翼道。<br>“去吧，下次再迟到咱就玩点别的吧！”<br>“不敢不敢！”<br>坐到位置上以后，趁着张晓颖不注意的机会，慕容朝李阳树起了大拇指，小子，真是厉害啊！<br>小个子的李阳神气十足，小声道：“听说你昨晚完虐孙磊他们，有空带带我哈，我dota水平可不像数学这么厉害呢！欠我情，你得拿这个还上，知道不？”<br>“……”慕容无语了，万一自己把他带的疯狂迷恋起了dota，那中国岂不是少了一个未来的华罗庚、陈景润？<br>罪孽啊罪孽！<br>那些世界级数学难题怎么办？又少了一个数学天才啊！<br>[三七中文 www.37zw.com]百度搜索“37zw.com”</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Fucheng-style/" rel="tag"><i class="fa fa-tag"></i> Fucheng_style</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/09/15/DOTA 第22章 兄弟,你火啦!/" rel="next" title="DOTA 第22章 兄弟,你火啦!">
+                <i class="fa fa-chevron-left"></i> DOTA 第22章 兄弟,你火啦!
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/09/15/DOTA 第20章 完胜/" rel="prev" title="DOTA 第20章 完胜">
+                DOTA 第20章 完胜 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="welcomelee" />
+          <p class="site-author-name" itemprop="name">welcomelee</p>
+           
+              <p class="site-description motion-element" itemprop="description">自动更新小说</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">3868</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">welcomelee</span>
+</div>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+
+<!--<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+--!>
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
